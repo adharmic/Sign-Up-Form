@@ -16,7 +16,9 @@
         </div>
         <div class="credit">
             <p>
-                Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com">Unsplash</a>
+                Photo by <a
+                    href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie
+                    West</a> on <a href="https://unsplash.com">Unsplash</a>
             </p>
         </div>
     </div>
@@ -30,14 +32,40 @@
         </h2>
         <div class="form-container">
             <h1>Let's do this!</h1>
-            <form action="" class="full-form">
+            <form action="" class="full-form" id="sign-up">
                 <div class="form-row">
+                    <ul>
+                        <li>
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </li>
 
+                        <li>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </li>
+                        <li>
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="email" id="email">
+                        </li>
+                        <li>
+                            <label for="number">Phone Number</label>
+                            <input type="tel" name="number" id="number">
+                        </li>
+                        <li>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </li>
+                        <li>
+                            <label for="confirm">Confirm Password</label>
+                            <input type="password" name="confirm" id="confirm">
+                        </li>
+                    </ul>
                 </div>
             </form>
         </div>
 
-        <button class="create-account">Create Account</button>
+        <button type="submit" form="sign-up" class="create-account">Create Account</button>
         <p>Already have an account? Log in</p>
     </div>
 </body>
