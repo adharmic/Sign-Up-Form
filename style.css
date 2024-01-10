@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+}
+
+.splash {
+    background-image: url("./images/leaves.jpg");
+    background-size: cover;
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.content {
+    flex-grow: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-container {
+    background-color: bisque;
+    width: 100%;
+}
+
+.create-account {
+    background-color: #596d48;
+}
