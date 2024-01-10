@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('./Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     margin: 0;
     height: 100%;
+    font-family: sans-serif;
 }
 
 body {
@@ -12,9 +20,15 @@ body {
     background-size: cover;
     flex-basis: 50%;
     flex-grow: 1;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content {
+    padding: 30px;
     flex-grow: 3;
 
     display: flex;
@@ -30,4 +44,36 @@ body {
 
 .create-account {
     background-color: #596d48;
+}
+
+.logo-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: 200px;
+    width: 100%;
+}
+
+.logo-bar img {
+    width: 75px;
+}
+
+.logo-bar h1 {
+    padding: 0;
+    margin: 20px 0;
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 75px;
+    color: white;
+}
+
+.splash p {
+    color: white;
+}
+
+.credit {
+}
+
+.splash a {
+    color: inherit;
 }
